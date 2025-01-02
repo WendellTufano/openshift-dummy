@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: qa
+  
+logging:
+    level:
+      root: INFO
+      com:
+        exemplo: DEBUG
+        
+        
+feign:
+  clients:
+    product:
+      url: ${PRODUCT_BASE_URL:https://dummyjson.com}
+        
